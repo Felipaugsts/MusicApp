@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8B60C2A6F5F31B4AE070CBFD /* Pods_MusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10110F0146068C542FF672FC /* Pods_MusicApp.framework */; };
+		C5ABCADF27B3EA0E00476038 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABCADE27B3EA0E00476038 /* Api.swift */; };
+		C5ABCAE127B3EB7D00476038 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABCAE027B3EB7D00476038 /* MusicModel.swift */; };
+		C5ABCAE427B3EC7800476038 /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABCAE327B3EC7800476038 /* MusicViewModel.swift */; };
 		C5C898D327B35ABC00E852CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C898D227B35ABC00E852CE /* AppDelegate.swift */; };
 		C5C898D527B35ABC00E852CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C898D427B35ABC00E852CE /* SceneDelegate.swift */; };
 		C5C898D727B35ABC00E852CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C898D627B35ABC00E852CE /* ViewController.swift */; };
@@ -22,6 +25,9 @@
 		10110F0146068C542FF672FC /* Pods_MusicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA6001BF02B909A113613F9 /* Pods-MusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.release.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig"; sourceTree = "<group>"; };
 		9C235C78BBA24028FEE6CB1A /* Pods-MusicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C5ABCADE27B3EA0E00476038 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		C5ABCAE027B3EB7D00476038 /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		C5ABCAE327B3EC7800476038 /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
 		C5C898CF27B35ABC00E852CE /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C898D227B35ABC00E852CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5C898D427B35ABC00E852CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +97,30 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		C5ABCADC27B3E9E900476038 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C5ABCADE27B3EA0E00476038 /* Api.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C5ABCADD27B3E9FC00476038 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5ABCAE027B3EB7D00476038 /* MusicModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5ABCAE227B3EC6400476038 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C5ABCAE327B3EC7800476038 /* MusicViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C5C898C627B35ABC00E852CE = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +142,9 @@
 		C5C898D127B35ABC00E852CE /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				C5ABCAE227B3EC6400476038 /* ViewModel */,
+				C5ABCADD27B3E9FC00476038 /* Model */,
+				C5ABCADC27B3E9E900476038 /* Data */,
 				C5ABCADB27B3E95500476038 /* Common */,
 				C5ABCAD927B3E92D00476038 /* View Controllers */,
 				C5ABCADA27B3E94200476038 /* View */,
@@ -221,8 +254,11 @@
 			files = (
 				C5C898D727B35ABC00E852CE /* ViewController.swift in Sources */,
 				C5C898D327B35ABC00E852CE /* AppDelegate.swift in Sources */,
+				C5ABCAE427B3EC7800476038 /* MusicViewModel.swift in Sources */,
 				C5C898E827B35C9800E852CE /* MusicCVCell.swift in Sources */,
+				C5ABCADF27B3EA0E00476038 /* Api.swift in Sources */,
 				C5C898D527B35ABC00E852CE /* SceneDelegate.swift in Sources */,
+				C5ABCAE127B3EB7D00476038 /* MusicModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
