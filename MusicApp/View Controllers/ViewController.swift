@@ -27,6 +27,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
             DispatchQueue.main.async {
                 self.MusicCollectionView.reloadData()
                 self.loadingSpinner.stopAnimating()
+                self.view.isUserInteractionEnabled = true
             }
         }
         self.loadingSpinner.startAnimating()
@@ -35,9 +36,14 @@ class ViewController: UIViewController, UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let field = searchBar.text ?? ""
+        if field.isEmpty {
+            searchBar.resignFirstResponder()
+        } else {
         artistModel.fetchMusic(Artist: field.lowercased())
         self.loadingSpinner.startAnimating()
         searchBar.resignFirstResponder()
+        self.view.isUserInteractionEnabled = false
+        }
     }
 
 }

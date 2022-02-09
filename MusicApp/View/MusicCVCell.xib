@@ -99,6 +99,7 @@
             </constraints>
             <size key="customSize" width="365" height="76"/>
             <connections>
+                <outlet property="FavButton" destination="WQC-Q0-hLc" id="zSG-WG-Tgu"/>
                 <outlet property="bandTitle" destination="hxA-I3-DhT" id="GSM-Mo-Jii"/>
                 <outlet property="imageView" destination="UFo-89-wfB" id="ypo-R8-Jys"/>
                 <outlet property="musicTitle" destination="9EG-1q-ywf" id="MsV-mI-86o"/>

@@ -82,23 +82,66 @@
             </objects>
             <point key="canvasLocation" x="-142.02898550724638" y="-66.294642857142861"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorites View Controller-->
         <scene sceneID="Mhl-n8-aNF">
             <objects>
-                <viewController id="NEu-Pj-Deo" sceneMemberID="viewController">
+                <viewController id="NEu-Pj-Deo" customClass="FavoritesViewController" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o11-Q4-boI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="wMm-Jv-png">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pX8-fo-4Gy">
+                                <rect key="frame" x="0.0" y="100" width="414" height="713"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CIS-8o-zHr">
+                                    <size key="itemSize" width="414" height="129"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="llg-Lc-MBX" customClass="MusicCVCell" customModule="MusicApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Jss-IW-K92">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="129"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="NEu-Pj-Deo" id="Roi-ZB-KHC"/>
+                                    <outlet property="delegate" destination="NEu-Pj-Deo" id="aQC-br-An9"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3mX-hI-r4v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pX8-fo-4Gy" firstAttribute="top" secondItem="wMm-Jv-png" secondAttribute="bottom" constant="5" id="7fo-Tf-JCi"/>
+                            <constraint firstItem="wMm-Jv-png" firstAttribute="top" secondItem="3mX-hI-r4v" secondAttribute="top" id="JJT-06-JjH"/>
+                            <constraint firstItem="pX8-fo-4Gy" firstAttribute="trailing" secondItem="3mX-hI-r4v" secondAttribute="trailing" id="KWe-Do-uH4"/>
+                            <constraint firstItem="pX8-fo-4Gy" firstAttribute="leading" secondItem="3mX-hI-r4v" secondAttribute="leading" id="c9u-ak-52d"/>
+                            <constraint firstItem="pX8-fo-4Gy" firstAttribute="bottom" secondItem="3mX-hI-r4v" secondAttribute="bottom" id="ioi-d4-jhQ"/>
+                            <constraint firstItem="wMm-Jv-png" firstAttribute="leading" secondItem="3mX-hI-r4v" secondAttribute="leading" id="s6T-dA-eEe"/>
+                            <constraint firstItem="wMm-Jv-png" firstAttribute="trailing" secondItem="3mX-hI-r4v" secondAttribute="trailing" id="zMF-Is-z4e"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="w1Z-Qj-Wya">
                         <imageReference key="image" image="heart" catalog="system" symbolScale="large" renderingMode="template"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="FavoriteCollectionView" destination="pX8-fo-4Gy" id="bsq-mF-5OU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GdJ-Vd-KlT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-142" y="624"/>
+            <point key="canvasLocation" x="-142.02898550724638" y="623.4375"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lyj-xG-nea">
