@@ -10,16 +10,32 @@ import UIKit
 class ViewController: UIViewController {
     
     private lazy var artistModel: MusicViewModel = AppContainer.shared.resolve(MusicViewModel.self)!
-
+    @IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
+    
     @IBOutlet weak var MusicCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         MusicCollectionView.register(UINib(nibName: "MusicCVCell", bundle: nil), forCellWithReuseIdentifier: "cell")
-        artistModel.fetchMusic(Artist: "Nirvana")
+        
+        
+        
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        artistModel.onShowMusic = {
+            DispatchQueue.main.async {
+                self.MusicCollectionView.reloadData()
+                self.loadingSpinner.stopAnimating()
+            }
+        }
+        self.loadingSpinner.startAnimating()
+        artistModel.fetchMusic(Artist: "James")
+    }
+
 }
+
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
