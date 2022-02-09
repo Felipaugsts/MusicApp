@@ -52,7 +52,6 @@
 				9C235C78BBA24028FEE6CB1A /* Pods-MusicApp.debug.xcconfig */,
 				6BA6001BF02B909A113613F9 /* Pods-MusicApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -62,6 +61,34 @@
 				10110F0146068C542FF672FC /* Pods_MusicApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5ABCAD927B3E92D00476038 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5C898D627B35ABC00E852CE /* ViewController.swift */,
+				C5C898E627B35C9800E852CE /* MusicCVCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C5ABCADA27B3E94200476038 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5C898E727B35C9800E852CE /* MusicCVCell.xib */,
+				C5C898DD27B35ABF00E852CE /* LaunchScreen.storyboard */,
+				C5C898D827B35ABC00E852CE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5ABCADB27B3E95500476038 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C5C898D227B35ABC00E852CE /* AppDelegate.swift */,
+				C5C898D427B35ABC00E852CE /* SceneDelegate.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		C5C898C627B35ABC00E852CE = {
@@ -85,14 +112,10 @@
 		C5C898D127B35ABC00E852CE /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
-				C5C898D227B35ABC00E852CE /* AppDelegate.swift */,
-				C5C898D427B35ABC00E852CE /* SceneDelegate.swift */,
-				C5C898D627B35ABC00E852CE /* ViewController.swift */,
-				C5C898E627B35C9800E852CE /* MusicCVCell.swift */,
-				C5C898E727B35C9800E852CE /* MusicCVCell.xib */,
-				C5C898D827B35ABC00E852CE /* Main.storyboard */,
+				C5ABCADB27B3E95500476038 /* Common */,
+				C5ABCAD927B3E92D00476038 /* View Controllers */,
+				C5ABCADA27B3E94200476038 /* View */,
 				C5C898DB27B35ABF00E852CE /* Assets.xcassets */,
-				C5C898DD27B35ABF00E852CE /* LaunchScreen.storyboard */,
 				C5C898E027B35ABF00E852CE /* Info.plist */,
 			);
 			path = MusicApp;
