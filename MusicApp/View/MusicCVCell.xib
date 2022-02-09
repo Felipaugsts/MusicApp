@@ -96,8 +96,9 @@
             </constraints>
             <size key="customSize" width="365" height="76"/>
             <connections>
-                <outlet property="ImageView" destination="UFo-89-wfB" id="2RJ-Hj-UVD"/>
-                <outlet property="bandTitle" destination="hxA-I3-DhT" id="iyz-On-qpG"/>
+                <outlet property="bandTitle" destination="hxA-I3-DhT" id="GSM-Mo-Jii"/>
+                <outlet property="imageView" destination="UFo-89-wfB" id="ypo-R8-Jys"/>
+                <outlet property="musicTitle" destination="9EG-1q-ywf" id="MsV-mI-86o"/>
             </connections>
             <point key="canvasLocation" x="455.79710144927537" y="63.616071428571423"/>
         </collectionViewCell>

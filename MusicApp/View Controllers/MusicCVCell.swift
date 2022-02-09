@@ -9,12 +9,10 @@ import UIKit
 
 class MusicCVCell: UICollectionViewCell {
 
-//    @IBOutlet weak var MusicTitle: UILabel!
-//    @IBOutlet weak var bandTitle: UILabel!
-//    @IBOutlet weak var ImageView: UIImageView!
+
     @IBOutlet weak var bandTitle: UILabel!
-    @IBOutlet weak var MusicTitle: UILabel!
-    @IBOutlet weak var ImageView: UIImageView!
+    @IBOutlet weak var musicTitle: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
