@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private lazy var artistModel: MusicViewModel = AppContainer.shared.resolve(MusicViewModel.self)!
 
     @IBOutlet weak var MusicCollectionView: UICollectionView!
     
@@ -15,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         MusicCollectionView.register(UINib(nibName: "MusicCVCell", bundle: nil), forCellWithReuseIdentifier: "cell")
- 
+        artistModel.fetchMusic(Artist: "Nirvana")
     }
 }
 

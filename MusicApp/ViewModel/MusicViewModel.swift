@@ -11,7 +11,7 @@ import Foundation
 
 class MusicViewModel {
     public let api: MusicApiProtocol
-    public var MusicFetched: [Artist] = []  
+    public var MusicFetched: [Artist] = []
     
     var onShowMusic:(() -> Void)?
     
@@ -19,9 +19,9 @@ class MusicViewModel {
         self.api = api
     }
     
-    func fetchMusic(Artist: String) {
+   public func fetchMusic(Artist: String) {
         MusicFetched = []
-        api.getMusic(Artist: "Nirvana") { [weak self] musics in
+        api.getMusic(Artist: Artist) { [weak self] musics in
             self?.MusicFetched.append(contentsOf: musics)
             self?.onShowMusic?()
         }
