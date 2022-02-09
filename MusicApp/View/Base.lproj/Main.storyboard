@@ -75,6 +75,7 @@
                     <connections>
                         <outlet property="MusicCollectionView" destination="cjB-FH-zhl" id="Pai-Sj-Hup"/>
                         <outlet property="loadingSpinner" destination="A3A-v5-0lq" id="c1Q-b7-XwM"/>
+                        <outlet property="searchBar" destination="NQq-zM-SF6" id="va0-p2-6Qi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

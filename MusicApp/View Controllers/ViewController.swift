@@ -7,20 +7,19 @@
 import SDWebImage
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UISearchBarDelegate {
     
     private lazy var artistModel: MusicViewModel = AppContainer.shared.resolve(MusicViewModel.self)!
-    @IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
     
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
     @IBOutlet weak var MusicCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        searchBar.delegate = self
         MusicCollectionView.register(UINib(nibName: "MusicCVCell", bundle: nil), forCellWithReuseIdentifier: "cell")
-        
-        
-        
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -32,6 +31,13 @@ class ViewController: UIViewController {
         }
         self.loadingSpinner.startAnimating()
         artistModel.fetchMusic(Artist: "James")
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let field = searchBar.text ?? ""
+        artistModel.fetchMusic(Artist: field.lowercased())
+        self.loadingSpinner.startAnimating()
+        searchBar.resignFirstResponder()
     }
 
 }
@@ -53,5 +59,4 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         return cell
     }
 }
-
 
