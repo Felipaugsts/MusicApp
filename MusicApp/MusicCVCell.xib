@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="MusicCVCell" customModule="MusicApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="76"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqr-Yn-RcY">
+                        <rect key="frame" x="0.0" y="0.0" width="365" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nirvana" translatesAutoresizingMaskIntoConstraints="NO" id="UFo-89-wfB">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="rl1-qH-o5y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Smell Like Teen Spirit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EG-1q-ywf">
+                                <rect key="frame" x="88" y="8" width="173.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173.5" id="LyK-LJ-KLG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nirvana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxA-I3-DhT">
+                                <rect key="frame" x="90" y="33" width="43.5" height="21"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XN-EE-8rf">
+                                <rect key="frame" x="0.0" y="69" width="365" height="1"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ZkV-U7-NxX"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQC-Q0-hLc">
+                                <rect key="frame" x="309.5" y="19" width="45.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BBs-gE-3Eb"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UFo-89-wfB" secondAttribute="bottom" constant="5" id="11r-sv-IDn"/>
+                            <constraint firstItem="UFo-89-wfB" firstAttribute="leading" secondItem="qqr-Yn-RcY" secondAttribute="leading" id="3jd-z3-XP9"/>
+                            <constraint firstAttribute="width" constant="365" id="9qi-uq-70o"/>
+                            <constraint firstAttribute="trailing" secondItem="5XN-EE-8rf" secondAttribute="trailing" id="F2J-s9-vzi"/>
+                            <constraint firstAttribute="height" constant="70" id="FvY-0S-zOQ"/>
+                            <constraint firstItem="hxA-I3-DhT" firstAttribute="leading" secondItem="UFo-89-wfB" secondAttribute="trailing" constant="10" id="HYR-Gp-Dxo"/>
+                            <constraint firstAttribute="bottom" secondItem="5XN-EE-8rf" secondAttribute="bottom" id="ONM-bR-UAR"/>
+                            <constraint firstItem="hxA-I3-DhT" firstAttribute="top" secondItem="9EG-1q-ywf" secondAttribute="bottom" constant="4" id="TVf-bk-MzG"/>
+                            <constraint firstItem="5XN-EE-8rf" firstAttribute="leading" secondItem="qqr-Yn-RcY" secondAttribute="leading" id="Tnu-Bj-tzj"/>
+                            <constraint firstItem="5XN-EE-8rf" firstAttribute="top" secondItem="WQC-Q0-hLc" secondAttribute="bottom" constant="30" id="UGQ-2a-KaV"/>
+                            <constraint firstAttribute="bottom" secondItem="hxA-I3-DhT" secondAttribute="bottom" constant="16" id="YKL-XH-p8s"/>
+                            <constraint firstItem="9EG-1q-ywf" firstAttribute="top" secondItem="qqr-Yn-RcY" secondAttribute="top" constant="8" id="fUV-zc-JH0"/>
+                            <constraint firstItem="9EG-1q-ywf" firstAttribute="leading" secondItem="UFo-89-wfB" secondAttribute="trailing" constant="8" id="iHv-Ny-tny"/>
+                            <constraint firstItem="UFo-89-wfB" firstAttribute="top" secondItem="qqr-Yn-RcY" secondAttribute="top" id="pJF-JZ-Y9l"/>
+                            <constraint firstAttribute="trailing" secondItem="WQC-Q0-hLc" secondAttribute="trailing" constant="10" id="zJT-N6-1wX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qqr-Yn-RcY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7N4-Ho-XKR"/>
+                <constraint firstAttribute="bottom" secondItem="qqr-Yn-RcY" secondAttribute="bottom" id="lUH-cy-EbF"/>
+                <constraint firstAttribute="trailing" secondItem="qqr-Yn-RcY" secondAttribute="trailing" id="w8a-ec-UQI"/>
+                <constraint firstItem="qqr-Yn-RcY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wCE-Q0-ztm"/>
+            </constraints>
+            <size key="customSize" width="365" height="76"/>
+            <connections>
+                <outlet property="ImageView" destination="UFo-89-wfB" id="2RJ-Hj-UVD"/>
+                <outlet property="bandTitle" destination="hxA-I3-DhT" id="iyz-On-qpG"/>
+            </connections>
+            <point key="canvasLocation" x="455.79710144927537" y="63.616071428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Nirvana" width="696" height="447"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -13,6 +13,8 @@
 		C5C898DA27B35ABC00E852CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5C898D827B35ABC00E852CE /* Main.storyboard */; };
 		C5C898DC27B35ABF00E852CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C898DB27B35ABF00E852CE /* Assets.xcassets */; };
 		C5C898DF27B35ABF00E852CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5C898DD27B35ABF00E852CE /* LaunchScreen.storyboard */; };
+		C5C898E827B35C9800E852CE /* MusicCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C898E627B35C9800E852CE /* MusicCVCell.swift */; };
+		C5C898E927B35C9800E852CE /* MusicCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5C898E727B35C9800E852CE /* MusicCVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C5C898DB27B35ABF00E852CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5C898DE27B35ABF00E852CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5C898E027B35ABF00E852CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5C898E627B35C9800E852CE /* MusicCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCVCell.swift; sourceTree = "<group>"; };
+		C5C898E727B35C9800E852CE /* MusicCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCVCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				C5C898D227B35ABC00E852CE /* AppDelegate.swift */,
 				C5C898D427B35ABC00E852CE /* SceneDelegate.swift */,
 				C5C898D627B35ABC00E852CE /* ViewController.swift */,
+				C5C898E627B35C9800E852CE /* MusicCVCell.swift */,
+				C5C898E727B35C9800E852CE /* MusicCVCell.xib */,
 				C5C898D827B35ABC00E852CE /* Main.storyboard */,
 				C5C898DB27B35ABF00E852CE /* Assets.xcassets */,
 				C5C898DD27B35ABF00E852CE /* LaunchScreen.storyboard */,
@@ -127,6 +133,7 @@
 			files = (
 				C5C898DF27B35ABF00E852CE /* LaunchScreen.storyboard in Resources */,
 				C5C898DC27B35ABF00E852CE /* Assets.xcassets in Resources */,
+				C5C898E927B35C9800E852CE /* MusicCVCell.xib in Resources */,
 				C5C898DA27B35ABC00E852CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				C5C898D727B35ABC00E852CE /* ViewController.swift in Sources */,
 				C5C898D327B35ABC00E852CE /* AppDelegate.swift in Sources */,
+				C5C898E827B35C9800E852CE /* MusicCVCell.swift in Sources */,
 				C5C898D527B35ABC00E852CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
