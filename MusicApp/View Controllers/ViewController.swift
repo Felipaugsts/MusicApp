@@ -22,10 +22,7 @@ class ViewController: UIViewController, UISearchBarDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        favoriteModel.getFavorites(completion: {
-            [weak self] items in
-            print("completion:", items)
-        })
+   
         
         
 //        getMusic(Artist: Artist) { [weak self] musics in
