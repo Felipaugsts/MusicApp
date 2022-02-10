@@ -98,9 +98,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         print("test: \(ind)")
         
         
-//        favoriteModel.addToFavorite(trackName: ind.trackName, country: ind.country, artworkUrl100: ind.artworkUrl100, artistName: ind.artistName)
-//        favoriteModel.getFavorites()
-//        self.addItemToFavorite(Artist: ind[indexPath.row].trackName, country: ind[indexPath.row].country, artworkUrl100: ind[indexPath.row].artworkUrl100, artistName: ind[indexPath.row].artistName)
+        favoriteModel.addToFavorite(trackName: ind.trackName, country: ind.country, artworkUrl100: ind.artworkUrl100, artistName: ind.artistName)
     }
     
 }
