@@ -4,13 +4,23 @@
 //
 //  Created by FELIPE AUGUSTO SILVA on 08/02/22.
 //
-
+import CoreData
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    //    MARK: - CORE DATA STACK -
+        
+        lazy var persistentContainer: NSPersistentContainer = {
+           let container = NSPersistentContainer(name: "Favorites")
+            container.loadPersistentStores{(storeDescription, error) in
+                if let error = error as NSError? {
+                    fatalError("\(error)")
+                }
+            }
+            return container
+        }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

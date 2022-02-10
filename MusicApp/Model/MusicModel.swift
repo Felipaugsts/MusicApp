@@ -19,3 +19,4 @@ struct Artist: Decodable {
     let trackName: String
     
 }
+

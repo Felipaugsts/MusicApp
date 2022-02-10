@@ -58,12 +58,11 @@
                                     <constraint firstAttribute="height" constant="1" id="ZkV-U7-NxX"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQC-Q0-hLc">
-                                <rect key="frame" x="309.5" y="19" width="45.5" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7v-Tt-5vd">
+                                <rect key="frame" x="312" y="14" width="45" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="BBs-gE-3Eb"/>
+                                    <constraint firstAttribute="width" constant="45" id="9b0-9c-C79"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
                             </button>
@@ -76,15 +75,15 @@
                             <constraint firstAttribute="trailing" secondItem="5XN-EE-8rf" secondAttribute="trailing" id="F2J-s9-vzi"/>
                             <constraint firstAttribute="height" constant="70" id="FvY-0S-zOQ"/>
                             <constraint firstItem="hxA-I3-DhT" firstAttribute="leading" secondItem="UFo-89-wfB" secondAttribute="trailing" constant="10" id="HYR-Gp-Dxo"/>
+                            <constraint firstAttribute="trailing" secondItem="h7v-Tt-5vd" secondAttribute="trailing" constant="8" id="Ls9-QE-vsq"/>
                             <constraint firstAttribute="bottom" secondItem="5XN-EE-8rf" secondAttribute="bottom" id="ONM-bR-UAR"/>
                             <constraint firstItem="hxA-I3-DhT" firstAttribute="top" secondItem="9EG-1q-ywf" secondAttribute="bottom" constant="4" id="TVf-bk-MzG"/>
                             <constraint firstItem="5XN-EE-8rf" firstAttribute="leading" secondItem="qqr-Yn-RcY" secondAttribute="leading" id="Tnu-Bj-tzj"/>
-                            <constraint firstItem="5XN-EE-8rf" firstAttribute="top" secondItem="WQC-Q0-hLc" secondAttribute="bottom" constant="30" id="UGQ-2a-KaV"/>
                             <constraint firstAttribute="bottom" secondItem="hxA-I3-DhT" secondAttribute="bottom" constant="16" id="YKL-XH-p8s"/>
                             <constraint firstItem="9EG-1q-ywf" firstAttribute="top" secondItem="qqr-Yn-RcY" secondAttribute="top" constant="8" id="fUV-zc-JH0"/>
                             <constraint firstItem="9EG-1q-ywf" firstAttribute="leading" secondItem="UFo-89-wfB" secondAttribute="trailing" constant="8" id="iHv-Ny-tny"/>
+                            <constraint firstItem="5XN-EE-8rf" firstAttribute="top" secondItem="h7v-Tt-5vd" secondAttribute="bottom" constant="24" id="mjx-lr-vEG"/>
                             <constraint firstItem="UFo-89-wfB" firstAttribute="top" secondItem="qqr-Yn-RcY" secondAttribute="top" id="pJF-JZ-Y9l"/>
-                            <constraint firstAttribute="trailing" secondItem="WQC-Q0-hLc" secondAttribute="trailing" constant="10" id="zJT-N6-1wX"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -99,7 +98,7 @@
             </constraints>
             <size key="customSize" width="365" height="76"/>
             <connections>
-                <outlet property="FavButton" destination="WQC-Q0-hLc" id="zSG-WG-Tgu"/>
+                <outlet property="FavButton" destination="h7v-Tt-5vd" id="A5o-Es-Rvp"/>
                 <outlet property="bandTitle" destination="hxA-I3-DhT" id="GSM-Mo-Jii"/>
                 <outlet property="imageView" destination="UFo-89-wfB" id="ypo-R8-Jys"/>
                 <outlet property="musicTitle" destination="9EG-1q-ywf" id="MsV-mI-86o"/>
@@ -112,9 +111,6 @@
         <image name="heart" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -8,12 +8,11 @@
 import UIKit
 
 class MusicCVCell: UICollectionViewCell {
-
-
-    @IBOutlet weak var FavButton: UIButton!
     @IBOutlet weak var bandTitle: UILabel!
     @IBOutlet weak var musicTitle: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var FavButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
