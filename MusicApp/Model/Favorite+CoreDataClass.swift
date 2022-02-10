@@ -17,7 +17,7 @@ extension Favorites {
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Favorites> {
         return NSFetchRequest<Favorites>(entityName: "Favorites")
     }
-    
+    @NSManaged var artistId: Int64
     @NSManaged var artistName: String
     @NSManaged var artworkUrl100: String
     @NSManaged var country: String

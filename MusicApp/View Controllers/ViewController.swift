@@ -28,6 +28,7 @@ class ViewController: UIViewController, UISearchBarDelegate{
     }
 
     override func viewDidAppear(_ animated: Bool) {
+        favoriteModel.FetchFavorites()
         artistModel.onShowMusic = {
             DispatchQueue.main.async {
                 self.MusicCollectionView.reloadData()
@@ -66,6 +67,13 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         
         cell.imageView.sd_setImage(with: URL(string: info.artworkUrl100), placeholderImage: UIImage(named: "placeholder.png"))
         
+        var icon: String = ""
+        filterFavorites(index: indexPath.row, completion: { (result) in
+            print("results", result)
+            icon = result
+        })
+        cell.FavButton.setImage(UIImage(systemName: icon), for: .normal)
+        icon = ""
         cell.bandTitle.text = "\(info.artistName)"
         cell.musicTitle.text = "\(info.trackName)"
         cell.FavButton.addTarget(self, action: #selector(addToFavorite(sender:)), for: .touchUpInside)
@@ -87,10 +95,27 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         }
         // We've got the index path for the cell that contains the button, now do something with it.
         let ind = artistModel.MusicFetched[indexPath.row]
+//        self.MusicCollectionView.reloadData()
+//        MusicCollectionView.reloadData()
         print("test: \(ind)")
         
         
         favoriteModel.addToFavorite(trackName: ind.trackName, country: ind.country, artworkUrl100: ind.artworkUrl100, artistName: ind.artistName)
+    }
+    
+    func filterFavorites(index: Int, completion: (_ result: String ) -> Void) {
+        print("idx", index)
+        completion("test")
+        let favorites = favoriteModel.result
+        let items = artistModel.MusicFetched[index]
+        
+        for i in favorites {
+            if i.trackName == items.trackName{
+                completion("heart.fill")
+            } else {
+                completion("heart")
+            }
+        }
     }
     
 }

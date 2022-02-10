@@ -39,6 +39,7 @@ extension FavoritesViewController: UICollectionViewDelegate, UICollectionViewDat
         cell.imageView.sd_setImage(with: URL(string: results.artworkUrl100), placeholderImage: UIImage(named: "placeholder.png"))
         cell.bandTitle.text = results.artistName
         cell.musicTitle.text = results.trackName
+        cell.FavButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
         return cell
     }
     
