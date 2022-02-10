@@ -50,7 +50,8 @@ class ViewController: UIViewController, UISearchBarDelegate{
         if field.isEmpty {
             searchBar.resignFirstResponder()
         } else {
-        artistModel.fetchMusic(Artist: field.lowercased())
+        let trimmed = field.replacingOccurrences(of: " ", with: "")
+        artistModel.fetchMusic(Artist: trimmed.lowercased())
         self.loadingSpinner.startAnimating()
         searchBar.resignFirstResponder()
         self.view.isUserInteractionEnabled = false
