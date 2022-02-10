@@ -23,12 +23,6 @@ class ViewController: UIViewController, UISearchBarDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
    
-        
-        
-//        getMusic(Artist: Artist) { [weak self] musics in
-//            self?.MusicFetched.append(contentsOf: musics)
-//            self?.onShowMusic?()
-//        }
         searchBar.delegate = self
         MusicCollectionView.register(UINib(nibName: "MusicCVCell", bundle: nil), forCellWithReuseIdentifier: "cell")
     }

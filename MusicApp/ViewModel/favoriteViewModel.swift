@@ -13,6 +13,7 @@ import CoreData
 class FavoriteViewModel {
     let context = ( UIApplication.shared.delegate as! AppDelegate ).persistentContainer.viewContext
     
+    public var result:[Favorites] = []
     public let core: favoriteProtocol
     
     init(core: favoriteProtocol) {
@@ -22,4 +23,16 @@ class FavoriteViewModel {
     public func addToFavorite(trackName: String, country: String, artworkUrl100: String, artistName: String) {
         core.addFavorite(trackName: trackName, country: country, artworkUrl100: artworkUrl100, artistName: artistName)
     }
+    
+   public func FetchFavorites() {
+        let request = NSFetchRequest<Favorites>(entityName: "Favorites")
+        
+        do {
+            result = try context.fetch(request)
+        }
+        catch
+        {
+    }
+    
+}
 }
