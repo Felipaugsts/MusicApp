@@ -81,19 +81,77 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C5ABCAD927B3E92D00476038 /* View Controllers */ = {
+		C5A8E3CA27BAEAD700DF44DE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				C5C898D627B35ABC00E852CE /* ViewController.swift */,
-				C5C898E627B35C9800E852CE /* MusicCVCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C5A8E3CB27BAEB0100DF44DE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				C5ABCAE827B4126900476038 /* FavoritesViewController.swift */,
 			);
-			path = "View Controllers";
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C5A8E3CC27BAEB2400DF44DE /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5ABCAF427B4843200476038 /* favoriteViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		C5A8E3CD27BAEB8500DF44DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5ABCAED27B4154B00476038 /* Favorite+CoreDataClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5A8E3CE27BAEBD300DF44DE /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5ABCAE327B3EC7800476038 /* MusicViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		C5A8E3CF27BAEC0600DF44DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5ABCAE027B3EB7D00476038 /* MusicModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5A8E3D027BAEC9D00DF44DE /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				C5ABCAF227B47E8100476038 /* FavoriteCore.swift */,
+				C5ABCAEA27B414DE00476038 /* Favorites.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		C5ABCAD927B3E92D00476038 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C5A8E3CF27BAEC0600DF44DE /* Model */,
+				C5A8E3CE27BAEBD300DF44DE /* View Model */,
+				C5A8E3CA27BAEAD700DF44DE /* Controller */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		C5ABCADA27B3E94200476038 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C5C898E627B35C9800E852CE /* MusicCVCell.swift */,
 				C5C898E727B35C9800E852CE /* MusicCVCell.xib */,
 				C5C898DD27B35ABF00E852CE /* LaunchScreen.storyboard */,
 				C5C898D827B35ABC00E852CE /* Main.storyboard */,
@@ -114,28 +172,19 @@
 			isa = PBXGroup;
 			children = (
 				C5ABCADE27B3EA0E00476038 /* Api.swift */,
-				C5ABCAF227B47E8100476038 /* FavoriteCore.swift */,
+				C5A8E3D027BAEC9D00DF44DE /* Core Data */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		C5ABCADD27B3E9FC00476038 /* Model */ = {
+		C5ABCAE227B3EC6400476038 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
-				C5ABCAE027B3EB7D00476038 /* MusicModel.swift */,
-				C5ABCAEA27B414DE00476038 /* Favorites.xcdatamodeld */,
-				C5ABCAED27B4154B00476038 /* Favorite+CoreDataClass.swift */,
+				C5A8E3CD27BAEB8500DF44DE /* Model */,
+				C5A8E3CB27BAEB0100DF44DE /* Controller */,
+				C5A8E3CC27BAEB2400DF44DE /* View Model */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C5ABCAE227B3EC6400476038 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				C5ABCAE327B3EC7800476038 /* MusicViewModel.swift */,
-				C5ABCAF427B4843200476038 /* favoriteViewModel.swift */,
-			);
-			path = ViewModel;
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 		C5ABCAE527B3EF4B00476038 /* Dependency Injection  */ = {
@@ -168,11 +217,10 @@
 			isa = PBXGroup;
 			children = (
 				C5ABCAE527B3EF4B00476038 /* Dependency Injection  */,
-				C5ABCAE227B3EC6400476038 /* ViewModel */,
-				C5ABCADD27B3E9FC00476038 /* Model */,
+				C5ABCAD927B3E92D00476038 /* Home */,
+				C5ABCAE227B3EC6400476038 /* Favorites */,
 				C5ABCADC27B3E9E900476038 /* Data */,
 				C5ABCADB27B3E95500476038 /* Common */,
-				C5ABCAD927B3E92D00476038 /* View Controllers */,
 				C5ABCADA27B3E94200476038 /* View */,
 				C5C898DB27B35ABF00E852CE /* Assets.xcassets */,
 				C5C898E027B35ABF00E852CE /* Info.plist */,
